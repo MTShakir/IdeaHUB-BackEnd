@@ -1,7 +1,8 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins 'https://coursework-frontend-hqri.vercel.app/',
-            'http://localhost:3000'
+            'http://localhost:3000',
+            'https://ideahub-frontend.onrender.com'
 
     resource '*',
              headers: :any,
